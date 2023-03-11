@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap');
+:root{
+  --backgroundPrimary: #e3ecf8;
+  --blackPrimary: #1e1e1e;
+  --bluePrimary: #58c6fd;
+  --whitePrimary: #ffff;
+}
+
+html{
+  min-height: 100%;
+}
+
+body{
+  background-image: url(https://i.ibb.co/FBNC1t6/bg-night.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title{
+  position: absolute;
+  top: 45%;
+  right: 44%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h1{
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-size: 40px;
+  font-weight:400;
+  color: var(--whitePrimary);
+}
+
+.imgLanding{
+  position: absolute;
+  height: 140px;
+  width: 160px;
+  top: -150%;
+}
+
+.cloud-1{
+  top:20%;
+}
+
+#btnLanding{
+  color: var(--whitePrimary);
+  width: 65%;
+  height: 46%;
+  font-family: 'Rubik', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  background: linear-gradient(190.05deg,#98e8fc -16.32%,#1fa9ff 56.32%,#8980f6 115.25%);
+  border-radius: 28px;
+  content: "";
+  transform: none;
+}
+
+#btnLanding:hover{
+  color: rgba(255, 255, 255, 1) !important;
+  box-shadow: 0 4px 4px var(--bluePrimary);
+  transition: all 0.2s ease;
+}
+
+.btnRegister{
+  font-style: none;
+  top: 130%;
+  left: 55%;
+  bottom: 0;
+}
+
+.btnLogin{
+  top: 130%;
+  right: 55%;
+  bottom: 0;
+}
+
+/* REGISTER STYLES */
+.sectionRegister{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register{
+  max-width: 650px;
+  width: 100vw;
+  display:flex;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.register span{
+  color: #adb5bd;
+}
+
+#form{
+  max-width: 320px;
+  width: 100vw;
+  margin: 2em auto;
+}
+
+#form >  input, .btn{
+  border: 1px solid #e9ecef;
+  padding: .9em 1em;
+   font-family:'Rubik', sans-serif;
+}
+
+#form > input:focus{
+  outline: none;
+}
+
+#form > .btn{
+  background-color: #003049;
+  color: #e9ecef;
+  font-size: 1em;
+  font-family:'Rubik', sans-serif;
+  cursor: pointer;
+}
+
+.flex{
+  display: flex;
+  gap: 1em;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.register .col-1{
+  margin: auto;
+  padding: 3em 0;
+}
+
+.col-1 h2, span{
+  font-family:'Rubik', sans-serif;
+}
+
+.lostPassword{
+  color: #adb5bd;
+  font-family:'Rubik', sans-serif;
+}
