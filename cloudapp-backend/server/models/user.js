@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-let uniqueValidator = require('mongoose-unique-validator');
+// var uniqueValidator = require('mongoose-unique-validator');
 
 let rol = {
     values : ['ADMIN','USER'],
@@ -40,7 +40,7 @@ userSchema.methods.toJSON = function(){
     return userObject;
 }
 
-userSchema.plugin(uniqueValidator,{
-    message:'{PATH} unique'
-})
+// userSchema.plugin(uniqueValidator,{
+//     message:'{PATH} unique'
+// })
 module.exports = mongoose.model('User', userSchema);
